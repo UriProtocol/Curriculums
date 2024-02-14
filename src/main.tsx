@@ -10,6 +10,7 @@ import CreateCurriculum from './pages/Curriculums/Create/index.tsx';
 import Home from './pages/Home/index.tsx';
 import CurriculumsView from './pages/Curriculums/View/index.tsx';
 import EditarCurriculum from './pages/Curriculums/Edit/index.tsx';
+import SingleCurriculumView from './pages/Curriculums/View/SingleCurriculumView.tsx';
 
 const router = createBrowserRouter([
   {
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
           },
           {
             path: ':id',
-            element: <>Single Curriculum view</>
+            element: <SingleCurriculumView />
           },
           {
             path: 'create',

@@ -44,7 +44,7 @@ export default function DatosAdicionales({ setData, setTab, data }: { setData: a
                     </div>
                 </div >
                 <div className="mt-10">
-                    <button onClick={() => setTab(4)} type="submit" className="block w-full rounded-md bg-[#19947b] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:brightness-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Siguiente</button>
+                    <button onClick={() => setTab(5)} type="submit" className="block w-full rounded-md bg-[#19947b] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:brightness-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Siguiente</button>
                 </div>
             </form>
         </div>

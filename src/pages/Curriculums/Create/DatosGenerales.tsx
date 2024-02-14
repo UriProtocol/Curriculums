@@ -1,4 +1,5 @@
 
+
 export default function DatosGenerales({ setData, setTab, data }: { setData: any, setTab: any, data: any }) {
 
     function handleChange(e: any) {
@@ -24,6 +25,12 @@ export default function DatosGenerales({ setData, setTab, data }: { setData: any
                         <label htmlFor="apellido" className="block text-sm font-semibold leading-6 text-gray-900">Apellido(s)</label>
                         <div className="mt-2.5">
                             <input type="text" name="apellido" onChange={handleChange} id="apellido" value={data.apellido} className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                        </div>
+                    </div>
+                    <div className='col-span-5'>
+                        <label htmlFor="apellido" className="block text-sm font-semibold leading-6 text-gray-900">Fecha de nacimeinto</label>
+                        <div className="mt-2.5">
+                            <input type="date" name="nacimiento" onChange={handleChange} id="nacimiento" value={data.nacimiento} className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                         </div>
                     </div>
                     <div className='col-span-6'>
@@ -65,6 +72,18 @@ export default function DatosGenerales({ setData, setTab, data }: { setData: any
                         <label htmlFor="cp" className="block text-sm font-semibold leading-6 text-gray-900">Código postal</label>
                         <div className="mt-2.5">
                             <input type="text" name="cp" onChange={handleChange} id="cp" value={data.cp} className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                        </div>
+                    </div>
+                    <div className="sm:col-span-3">
+                        <label htmlFor="cp" className="block text-sm font-semibold leading-6 text-gray-900">Ciudad</label>
+                        <div className="mt-2.5">
+                            <input type="text" name="ciudad" onChange={handleChange} id="ciudad" value={data.ciudad} className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                        </div>
+                    </div>
+                    <div className="sm:col-span-3">
+                        <label htmlFor="cp" className="block text-sm font-semibold leading-6 text-gray-900">Estado</label>
+                        <div className="mt-2.5">
+                            <input type="text" name="estado" onChange={handleChange} id="estado" value={data.estado} className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                         </div>
                     </div>
                     <div className="sm:col-span-3">
